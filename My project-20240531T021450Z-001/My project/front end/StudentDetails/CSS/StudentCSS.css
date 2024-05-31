@@ -1,0 +1,247 @@
+
+  @media screen and (min-width: 568px)
+  {
+    .card
+    {
+        width:500px;
+        height: 400px;
+        background-color: white;          
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        margin-top: 75px;
+        padding: 10px;
+    }
+    .UserIcon
+    {
+        width: 9%;
+        height: 9%;
+        border-radius: 75%;
+    }
+    .grid-container 
+    {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .grid-container > div 
+    {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+        font-size: 14px;
+        width:200px;
+    }
+    .item1 
+    {
+        grid-column: 1 ;
+    }
+    .item2 
+    {
+        grid-column: 2 ;
+    }
+    .gender
+    {
+        margin-left: 21px
+    }
+    #Name
+    {
+        width: 122px;
+        height: 20px;
+    }
+    #dob
+    {
+        width: 124px;
+        height: 22px;
+    }
+    .name
+    {
+        margin-left: 27px;
+    }
+    .dob 
+    {
+        margin-left: 31px;
+    }
+    #Choose
+    {
+        width: 130px;
+        height: 28px;
+    }
+    .scoreandpratical
+    {
+        width:125px;
+        height: 20px;
+          
+    }
+    button
+    {
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+    .Score1andScore2label
+    {
+        margin-left: 17px;
+    }
+    .choose
+    {
+        margin-left: 31px;
+    }
+}
+@media screen and (max-width: 567px) 
+{
+    .card
+    {
+        width:275px;
+        height: 540px;
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .UserIcon
+    {
+        width: 12%; 
+        height: 8%; 
+        border-radius: 75%;
+    }
+    .grid-container 
+    {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    .grid-container > div 
+    {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: left;
+        font-size: 14px;
+        width:200px;
+    }
+    .item1 
+    {
+        grid-column: 1/3 ;
+    }
+    .item2 
+    {
+        grid-column: 1/3 ;
+    }
+    .Score1andScore2label
+    {
+        margin-left: 17px;
+    }
+    #Name
+    {
+        width:125px ;
+    }
+    .gender
+    {
+        margin-left: 18px;
+    }
+    .name
+    {
+        margin-left: 26px;
+    }
+    #dob
+    {
+        width: 125px;
+    }
+    .choose
+    {
+        margin-left: 29px;
+    }
+    #Choose
+    {
+        width: 132px;
+        height: 23px;
+    }
+    .dob
+    {
+        margin-left: 30px;
+    }
+    .scoreandpratical
+    {
+        width: 125px;
+    }
+    button{
+        margin-top: 5px;
+    }
+}
+.errormessage
+{
+    margin-left: 70px;
+    font-size: 11px;
+    color: red;
+}
+#loader 
+{
+    position: fixed;
+    top:40%;
+    left:48%;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid blue;
+    border-right: 5px solid green;
+    border-bottom: 5px solid red;
+    border-left: 5px solid pink;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin 
+{
+    0% 
+    { 
+      -webkit-transform: rotate(0deg); 
+    }
+    100%
+    { 
+      -webkit-transform: rotate(360deg); 
+    }
+}
+@keyframes spin 
+{
+    0%
+    {
+      transform: rotate(0deg); 
+    }
+    100%
+    { 
+      transform: rotate(360deg); 
+    }
+}
+.navbar
+{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.navbar a 
+{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar a:hover 
+{
+    background: #ddd;
+    color: black;
+}
+#CssLoader
+{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255 , 0.9);
+    z-index: 9999;
+}

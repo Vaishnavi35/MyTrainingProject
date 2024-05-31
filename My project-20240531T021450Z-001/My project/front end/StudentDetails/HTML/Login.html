@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script src="https://oss.maxcdn.com/momentjs/2.8.2/moment.min.js"></script>
+        <script src="../JS/Login.js"></script>
+        <link rel="stylesheet" href="../CSS/Login.css">
+        <title>LOGIN</title>
+    </head>
+    <body>
+    <div class="container" id="container" >
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="card" style="background-color:rgba(0,0,0,0.5);padding: 20px;color: #0E93D7;margin-top: 85px;">
+                    <div class="card-body">
+                        <img src="../Image/student logo.png">
+                        <h2 class="text-center text-uppercase" style="position: relative;bottom: 25px;">login</h2>
+                        <form id="ValidateForm">
+                            <div class="form-group">
+                                <label> Username </label>
+                                    <input type="text" class="form-control" placeholder="username" name="userName" id="Name">
+                            </div>
+                            <div class="form-group">
+                                <label> Password </label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" placeholder="password" name="UserPassword" id="Password">
+                                    <span class="input-group-addon" style="background-color: transparent;"><a id="menu-toggle" href="#"><i class="glyphicon glyphicon-eye-open" style="color: white;"></i></a></span>
+                                    
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-block" style="margin-top: 15px;"> Login </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    </body>
+</html>

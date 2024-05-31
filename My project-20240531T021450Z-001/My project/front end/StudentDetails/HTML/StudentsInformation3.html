@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="../CSS/tableBS.css">
+    <title>StudentsInformation3</title>
+</head>
+<body>
+    <nav class="navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="../Image/student.png" width="40" height="35" class="img-responsive">
+            </div>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="../HTML/Student.html">STUDENT DETAILS FORM</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">STUDENTS INFORMATION TABLE<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="../HTML/StudentsInformation.html">STUDENTS INFORMATION TABLE-1</a></li>
+                          <li><a href="../HTML/StudentsInformation2.html">STUDENTS INFORMATION TABLE-2</a></li>
+                          <li class="active"><a href="../HTML/StudentsInformation3.html">STUDENTS INFORMATION TABLE-3</a></li>
+                        </ul>
+                      </li>
+                    <li><a href="../HTML/DataTable.html">DataTable</a></li>
+                    <li style="color: white;padding-top: 15px;padding-bottom: 15px;position: relative;display: block;padding: 10px 8px;">Logged in as <span id="username"> </span></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" onclick="return logout()"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="overlay">
+    <div id="loader"></div>
+    </div>
+    <h3 style="text-align: center;margin-top: 65px">Students Information</h3>
+
+    <div class="table-responsive"> 
+        <table class="table table-condensed table-bordered"  style="width:100%">
+            <thead style="background-color: royalblue; color:white;">
+                <tr>
+                    <th>N.O</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>STD</th>
+                    <th>Score1</th>
+                    <th>Score2</th>
+                    <th>Practical1</th>
+                    <th>Practical2</th>
+                    <th>Theory Total</th>
+                    <th>Practical Total</th>
+                    <th>Average</th>
+                </tr>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+        </table>
+    </div>
+    <script src="../JS/tableBS.js"></script>
+</body>
+</html>

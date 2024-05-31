@@ -1,0 +1,11 @@
+<nav class="navbar fixed-top" style="background-color: chocolate;">
+            <a class="navbar-brand">
+            <a class="navbar-brand" style="color: white;">
+                STUDENT MANAGEMENT
+              </a>
+              <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="../HTML/formBS.html" style="color:black">STUDENT DETAILS FORM</a></li>
+                <li><a href="../HTML/tableBS.html" style="color: black;">STUDENTS INFORMATION TABLE</a></li>
+                </ul></div>
+        </nav>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Details using BS  </title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>
+        <link rel="stylesheet" href="../CSS/formBS.css">
+        <script src="https://oss.maxcdn.com/momentjs/2.8.2/moment.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body onload="load()">
+        <div id="overlay">
+            <div id="loader"></div>
+        </div>
+        <div class="container" id="container" style="margin-top: 0px;">
+            <div class = "row">
+                <div class="col-md-2"> </div>
+                <div class="col-md-8"> 
+                    <form  method="post" id="Form">
+                        <div class="card">
+                            <div class="card-body" style="padding: 15px;">
+                               <img src = "../Image/StudentImg.jpg" class = "UserIcon">
+                                <h3 style="text-align: center; font-weight: bold;margin: 24px 0;"> Student's Update Form </h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Name</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                <input type="text" class="form-control" name = "Name" id="Name" placeholder = "Name"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                            <label>Gender</label>
+                                            <div>
+                                            <input type = "radio"   value = "Male" name = "Gender" id="Male" checked="checked">
+                                            <label id="LabelMale">Male</label>
+                                            <input type = "radio"  value = "Female" name = "Gender" id="Female">
+                                            <label id="LabelFemale">Female</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>DOB</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                <input type="text" autocomplete="off" class="form-control" name = "dob" id="dob" placeholder = "mm/dd/yyyy"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                        <div class="form-group">
+                                            <label> Class </label>
+                                            <select class="form-control" name="std" id="std">
+                                                <option disabled selected value=""> select </option>
+                                                <option value = "1"> 1 </option>
+                                                <option value = "2"> 2 </option>
+                                                <option value = "3"> 3 </option>
+                                                <option value = "4"> 4 </option>
+                                                <option value = "5"> 5 </option>
+                                                <option value = "6"> 6 </option>
+                                                <option value = "7"> 7 </option>
+                                                <option value = "8"> 8 </option>
+                                                <option value = "9"> 9 </option>
+                                                <option value = "10"> 10 </option>
+                                                <option value = "11"> 11 </option>
+                                                <option value = "12"> 12 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class="col-md-6"> 
+                                        <div class="form-group">
+                                            <label> Score 1 </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                <input class="form-control" type = "text" name="score1" id="score1"> 
+                                            </div>
+                                        </div>
+                                    </div>   
+                                    <div class="col-md-6"> 
+                                        <div class="form-group">
+                                            <label> Score 2 </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                <input  type = "text" class="form-control" name="score2" id="score2"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class="col-md-6"> 
+                                        <div class="form-group">
+                                            <label> Practical 1 </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                <input  type = "text" class="form-control" name="practical1" id="practical1" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label> Practical 2 </label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                <input  type = "text" class="form-control" name="practical2" id="practical2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-info center-block" style="margin-top: 15px;"> Update </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-2"></div> 
+        </div>                
+        <script src="../JS/StudentEditForm.js"></script>
+    </body>
+</html>

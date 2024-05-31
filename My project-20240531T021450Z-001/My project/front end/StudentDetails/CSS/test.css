@@ -1,0 +1,476 @@
+
+@media screen and (min-width: 569px)
+{
+    .card
+    {
+        width:500px;
+        height: 400px;
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .UserIcon
+    {
+        width: 9%;
+        height: 9%;
+        border-radius: 75%;
+    }
+    .Name
+    {
+        position: absolute;
+        left: 328px;
+        top: 151px;
+    }
+    .Name:before
+    {
+        content: "*";
+        color: red;
+    }
+    #Name
+    {
+        width: 12%;
+        position: absolute;
+        right: 556px;    
+        top: 151px;
+        
+    }
+    .Gender
+    {
+        position: absolute;
+        left: 583px;
+        top: 152px;
+       
+    }
+    #Male
+    {
+        position: absolute;
+        left: 643px;
+        top:151px;
+       
+    }
+    .Male
+    {
+        position: absolute;
+        left:  669px;
+        top: 151px;
+       
+    }
+    #Female
+    {
+        position: absolute;
+        left: 710px;
+        bottom:333px;
+    }
+    .Female
+    {
+        position: absolute;
+        left:  736px;
+        bottom: 330px;
+    }
+    .DOB
+    {
+        position: absolute;
+        right: 709px;
+        top: 209px;
+       
+    }
+    #DOB
+    {
+        width: 130px;
+        position: absolute;
+        right: 557px;
+        top: 207px;
+        
+    }
+    .STD
+    {
+        position: absolute;
+        left: 595px;
+        bottom: 273px;
+    }
+    #Choose
+    {
+        width: 136px;
+        position: absolute;
+        left: 647px;
+        bottom: 272px;
+        height: 22px;
+    }
+    .Scr1
+    {
+        position: absolute;
+        right: 706px;
+        bottom: 216px;
+    }
+    .Scr1:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Score1
+    {
+        width: 12%;
+        position: absolute;
+        right: 556px;
+        bottom: 215px;
+    }
+    .Scr2
+    {
+        position: absolute;
+        left: 570px;
+        bottom: 215px;
+    }
+    .Scr2:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Score2
+    {
+        width: 12%;
+        position: absolute;
+        left: 646px;
+        bottom: 214px;
+    }
+    .Pract1
+    {
+        position: absolute;
+        right:  706px;
+        bottom: 165px;
+    }
+    .Pract1:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Pract1
+    {
+        width: 12%;
+        position: absolute;
+        right: 556px;
+        bottom: 162px;
+    }
+    
+    .Pract2
+    {
+        position: absolute;
+        left: 551px;
+        bottom: 165px;
+    }
+    .Pract2:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Pract2
+    {
+        width: 12%;
+        position: absolute;
+        left: 646px;
+        top: 316px;
+    }
+    #Btn
+    {
+        position: absolute;
+        top: 379px;
+        left: 525px;
+    }
+    #Error{
+        display: block;
+       
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 608px;
+        bottom: 303px;
+        font-size: 12px;
+    }
+    #Error1{
+        display: block;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 610px;
+        top: 240px;
+        font-size: 12px;
+        
+    }
+    #Error2{
+        display: block;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        top: 293px;
+        right: 606px;
+        font-size: 12px;
+
+    }
+    #Error3{
+        display: block;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 357px;
+        top: 293px;
+        font-size: 12px;
+
+    }
+    #Error4{
+        display: block;
+        font-size: 12px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 590px;
+        top: 346px;
+    }
+    #Error5{
+        display: block;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        left: 647px;
+        top: 347px;
+        font-size: 12px;
+
+    }
+}
+
+@media screen and (max-width: 568px) 
+{
+    .card
+    {
+        width:275px;
+        height: 512px;
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .UserIcon
+    {
+        width: 12%; 
+        height: 8%; 
+        border-radius: 75%;
+    }
+    .Name
+    {
+        position: absolute;
+        right: 221px;
+        top: 132px;
+    }
+    .Name:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Name
+    {
+        width: 31%; 
+        position: absolute;
+        left: 160px;            
+        top: 129px;
+    }
+    .Gender
+    {
+        position: absolute;
+        right: 221px;
+        top: 177px;
+        
+    }
+    #Male
+    {
+        position: absolute;
+        left: 156px;
+        bottom:447px;
+    }
+    .Male
+    {
+        position: absolute;
+        left:  176px;
+        top: 176px;
+        
+    }
+    #Female
+    {
+        position: absolute;
+        left: 206px;
+        bottom: 448px;  
+        
+    }
+    .Female
+    {
+        position: absolute;
+        left:  227px;
+        bottom: 446px;
+    }
+    .DOB
+    {
+        position: absolute;
+        right: 221px;
+        top: 219px;
+    }
+    #DOB
+    {
+        width: 31%;
+        position: absolute;
+        right: 83px;
+        top: 216px;
+    }
+    .STD
+    {
+        position: absolute;
+        left: 100px;
+        top: 263px;
+    }
+    #Choose
+    {
+       width: 33%;
+       position: absolute;
+       left: 160px;
+       bottom: 358px;
+    }
+    .Scr1
+    {
+        position: absolute;
+        right: 222px;
+        bottom: 317px;
+    }
+    .Scr1:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Score1
+    {
+        width: 31%;
+        position: absolute;
+        right: 83px;
+        bottom: 315px;
+    }
+    .Scr2
+    {
+        position: absolute;
+        left: 73px;
+        bottom: 263px;
+    }
+    .Scr2:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Score2
+    {
+        width: 31%;
+        position: absolute;
+        left: 158px;
+        bottom: 261px;
+    }
+    .Pract1
+    {
+        position: absolute;
+        right:  222px;
+        bottom: 215px;
+    }
+    .Pract1:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Pract1
+    {
+        width: 31%;
+        position: absolute;
+        right: 85px;
+        bottom: 213px;
+    }
+    .Pract2
+    {
+        position: absolute;
+        left: 54px;
+        bottom: 165px;
+    }
+    .Pract2:before
+    {
+        content: "*";
+        color: red;
+
+    }
+    #Pract2
+    {
+        width: 31%;
+        position: absolute;
+        left: 157px;
+        bottom: 160px;
+    } 
+    #Btn{
+        position: absolute;
+        bottom: 105px;
+        right: 140px;
+    }
+    #Error{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 130px;
+        top: 156px;
+    }
+    #Error1{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 131px;
+        top: 242px;
+        
+    }
+    #Error2{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 127px;
+        top: 331px;
+    }
+    #Error3{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 127px;
+        top: 386px;
+    }
+    #Error4{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 116px;
+        top: 433px;
+    }
+    #Error5{
+        display: block;
+        font-size: 10px;
+        visibility: hidden;
+        color:red;
+        position: absolute;
+        right: 117px;
+        top: 485px;
+    }
+}
+  

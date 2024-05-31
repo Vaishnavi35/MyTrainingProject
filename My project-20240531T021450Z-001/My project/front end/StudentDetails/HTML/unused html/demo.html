@@ -1,0 +1,60 @@
+<!--$(document).ready(function() 
+{   
+  
+    
+    $('.table').DataTable( 
+    {   
+        paging: true,
+        "pagingType": "simple_numbers",
+        "processing": true,
+        "serverSide": true,
+        "ajax" : 
+        {
+            type : "POST",
+            url : "http://localhost:8080/StudentsAPI/getStudentDetails",
+            contentType: "application/json",
+            "dataSrc": ""
+        },
+            columns: [
+                        { data: null,
+                          "render":  function ( row ) {
+                            var ini = 0;
+                            var no = ini+1;
+                            
+                            return no  }
+
+                        },
+                        { data: 'name' },
+                        { data: 'gender' },
+                        { data: 'dob' },
+                        { data: 'std' },
+                        { data: 'score1' },
+                        { data: 'score2'},
+                        { data: 'practical1' },
+                        { data: 'practical2'},
+                        
+                        { data:null, 
+                        
+                        "render":  function ( row) {
+                          
+                           return parseInt(row.score1) +parseInt(row.score2);  } 
+                        },
+                        { data: null,
+                          "render":  function ( row ) {
+                          
+                            return parseInt(row.practical1) +parseInt(row.practical2);  } 
+                         },
+                        { data: null,
+                          "render":  function ( row ) {
+                            var theoryTotal = parseInt(row.practical1) +parseInt(row.practical2);
+                            var practicalTotal = parseInt(row.score1) +parseInt(row.score2);
+                            
+                            return (theoryTotal+practicalTotal)/2;  }
+                         },
+
+    ],
+    
+    
+          
+    });
+});-->

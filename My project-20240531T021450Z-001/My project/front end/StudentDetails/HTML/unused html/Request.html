@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Details using BS  </title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"></script>-->
+    <script type="text/javascript" src="../JS/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="../JS/jquery.validate.min.js"></script>
+    <script src="../JS/Request.js"></script>
+        <link rel="stylesheet" href="../CSS/formBS.css">
+    </head>
+    <body onload="load()">
+        <nav class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img src="../Image/student.png" width="40" height="35" class="img-responsive">
+                </div>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="../HTML/formBS.html">STUDENT DETAILS FORM</a></li>
+                        <li><a href="../HTML/tableBS.html">STUDENTS INFORMATION TABLE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="CssLoader">
+            <div id="loader"></div>
+        </div>
+        <div class="container" id="container">
+            <div class = "row">
+                <div class="col-sm-2"> </div>
+                <div class="col-sm-8"> 
+                    <form  method="post" id="form" role="form" novalidate="novalidate">
+                        <div class="card" style="background: none;">
+                            <div class="card-body" style="padding: 15px;">
+                                
+                                <h3 style="text-align: center; font-weight: bold;  padding: 20px;"> Student Details </h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                    <label>Name</label>
+                                    <div>
+                                        <input type="text" class="form-control" name = "Name" id="Name" placeholder = "Name"/>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                    <label>Gender</label>
+                                        <div>
+                                            <input type = "radio"   value = "Male" name = "Gender" id="Gender" checked="checked">
+                                            <label for="solicit" >Male</label>
+                                            <input type = "radio"  value = "Female" name = "Gender" id="Gender">
+                                            <label for="solicitno">Female</label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                <div class = "row">
+                                    <div class="col-md-6"> 
+                                            <label>DOB</label>
+                                            <div>
+                                            <input type="date" class="form-control" name="dob" id="dob">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                            <label> Class </label>
+                                            <div>
+                                            <select class="form-control" name="std" id="std">
+                                                <option disabled selected value=""> select </option>
+                                                <option value = "1"> 1 </option>
+                                                <option value = "2"> 2 </option>
+                                                <option value = "3"> 3 </option>
+                                                <option value = "4"> 4 </option>
+                                                <option value = "5"> 5 </option>
+                                                <option value = "6"> 6 </option>
+                                                <option value = "7"> 7 </option>
+                                                <option value = "8"> 8 </option>
+                                                <option value = "9"> 9 </option>
+                                                <option value = "10"> 10 </option>
+                                                <option value = "11"> 11 </option>
+                                                <option value = "12"> 12 </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class="col-md-6"> 
+                                            <label> Score 1 </label>
+                                            <div>
+                                            <input class="form-control" type = "text" name="score1" id="score1"> 
+                                        </div>
+                                    </div>   
+                                    <div class="col-md-6"> 
+                                            <label> Score 2 </label>
+                                            <div>
+                                            <input  type = "text" class="form-control" name="score2" id="score2"> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                    <div class="col-md-6">         
+                                            <label> Practical 1 </label>
+                                            <div>
+                                            <input  type = "number" class="form-control" name="practical1" id="practical1" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"> 
+                                            <label> Practical 2 </label>
+                                            <div>
+                                            <input  type = "text" class="form-control" name="practical2" id="practical2">
+                                        </div>
+                                    </div>
+                                </div>
+                                        <button type="submit" class="btn btn-info center-block" style="margin-top: 15px;"> submit </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-2"></div> 
+
+            </div>                
+        </div>
+       
+    </body>
+</html>

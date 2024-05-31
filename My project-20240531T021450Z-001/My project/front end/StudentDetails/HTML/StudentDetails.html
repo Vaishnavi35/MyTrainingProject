@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Details </title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link rel = "stylesheet" href = "../CSS/StudentCSS.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body onload="load()">
+        <div id="CssLoader">
+        <div id="loader"></div>
+        </div>
+        <div class="navbar">
+            <a href="../HTML/StudentDetails.html" class="active">Student Details Form</a>
+            <a href="../HTML/Table.html">Student Informations Table</a>
+        </div>
+        <div>   
+            <form  onsubmit = "return false">
+                <center>
+                    <div class = "card" id = "card">
+                        <img src = "../Image/StudentImg.jpg" class = "UserIcon">
+                        <h3> Student Details </h3>
+                        <div class="grid-container">
+                            <div class="item1">
+                                <label class="name"> Name: </label>
+                                <input type = "text" id = "Name" placeholder = "Name">
+                                <label class="errormessage" id="NameError" ></label>
+                            </div>
+                            <div class="item2">
+                                <label class="gender"> Gender: </label>
+                                <input type = "radio" id = "Male"  value = "Male" name = "Gender" checked > <label for="Male" class = "Male"> Male </label>
+                                <input type = "radio" id = "Female" value = "Female" name = "Gender"> <label  for="Female" class = "Female"> Female </label>
+                            </div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="item1">
+                                <label class="dob">DOB:</label>
+                                <input type="date" id="dob" class="datepicker">
+                                <label class="errormessage" id="DOBError" ></label>
+                            </div>
+                            <div class="item2">
+                                <label class="choose"> Class: </label>
+                                <select id = "Choose">
+                                    <option value = "0"> select </option>
+                                    <option value = "1"> 1 </option>
+                                    <option value = "2"> 2 </option>
+                                    <option value = "3"> 3 </option>
+                                    <option value = "4"> 4 </option>
+                                    <option value = "5"> 5 </option>
+                                    <option value = "6"> 6 </option>
+                                    <option value = "7"> 7 </option>
+                                    <option value = "8"> 8 </option>
+                                    <option value = "9"> 9 </option>
+                                    <option value = "10"> 10 </option>
+                                    <option value = "11"> 11 </option>
+                                    <option value = "12"> 12 </option>
+                                </select>
+                                <label class="errormessage" id="STDError" ></label>
+                            </div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="item1">
+                                <label class="Score1andScore2label"> Score 1: </label>
+                                <input class="scoreandpratical"  type = "number" id = "Score1"> 
+                                <label class="errormessage" id="Score1Error" ></label>
+                            </div>
+                            <div class="item2">
+                                <label class="Score1andScore2label"> Score 2: </label>
+                                <input class="scoreandpratical" type = "number" id = "Score2"> 
+                                <label class="errormessage" id="Score2Error" ></label>
+                            </div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="item1">
+                                <label> Practical 1: </label>
+                                <input class="scoreandpratical" type = "number" id = "Pract1">
+                                <label class="errormessage" id="Practical1Error" ></label>
+                            </div>
+                            <div class="item2">
+                                <label> Practical 2: </label>
+                                <input class="scoreandpratical" type = "number" id = "Pract2">
+                                <label class="errormessage" id="Practical2Error" ></label>
+                            </div>
+                        </div>
+                        <div> <button onclick = "Validate();"> submit </button></div>
+                    </div>
+                </center>
+            </form>
+        </div>
+        <script src="../JS/Student.js"></script>
+    </body>
+</html>
